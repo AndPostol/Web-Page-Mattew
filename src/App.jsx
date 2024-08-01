@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import example from './assets/example.webp'
+import photo from './assets/photo-perfil.jpg'
 // Icons
 import pdfIcon from './assets/pdfIcon.svg'
 import excelIcon from "./assets/excel.svg";
@@ -19,18 +19,23 @@ function App() {
       <div></div>
       <div className='w-full pb-12 md:w-2/3 h-2/4 flex sm:flex-col md:flex-row justify-center  items-center'>
         <div className='text-white md:block flex flex-col items-center'>
-          <h1 className='font-["Raleway"] pt-10 text-center md:text-start font-bold text-6xl'>Your Name Here</h1>
-        <img src={example} alt="Matt" className='w-2/3 py-6 h-full rounded-full md:hidden '/>
-
-          <h3 className='py-10 w-3/4'>Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+          <h1 className='font-["Raleway"] pt-10 text-center md:text-start font-bold text-6xl'>Matthew Tabola</h1>
+        <img src={photo} alt="Matt" className='w-2/3 py-6 h-full rounded-full md:hidden '/>
+          <h2 className='text-xl w-3/4 font-semibold'>Shift Assistant at Amazon / <br /> Data Analytics Fellow</h2>
+          <h3 className='py-10 w-3/4'>
+          Hello! I am formerly an <span className='font-bold'>Assistant Manager</span> at Amazon, also enrolled in a <span className='font-bold'> Data Analytics Program</span>. 
+          <br />
+          <br />
+          You'll find me to be extremely dependable as well as versatile, eager to adapt to any new situation or challenge that arises. I also love amateur radio, and you can often catch me on the air!
+          </h3>
           <div className='w-3/4 flex flex-wrap  gap-5 justify-center lg:flex-nowrap lg:justify-start'>
-          <ActionButton icon={tableuWhite} text="Tableau" className="bg-[#3F8E00] border border-[#62BA1B] drop-shadow-lg"/>
-          <ActionButton icon={pdfIcon} text="Resume" className="bg-[#3F8E00] border border-[#62BA1B] drop-shadow-lg"/>
+          <ActionButton icon={tableuWhite} url="https://public.tableau.com/app/profile/matthew.tabola/vizzes" text="Tableau" className="bg-[#3F8E00] border border-[#62BA1B] drop-shadow-lg"/>
+          <ActionButton icon={pdfIcon} url="https://public.tableau.com/app/profile/matthew.tabola/vizzes" text="Resume" className="bg-[#3F8E00] border border-[#62BA1B] drop-shadow-lg"/>
           
           </div>
 
         </div>
-        <img src={example} alt="Matt" className='w-2/5 h-full rounded-full hidden md:block'/>
+        <img src={photo} alt="Matt" className='w-2/5 h-full rounded-full hidden md:block'/>
       </div>
       <div className='w-3/4 mb-10'>
       <h4 className='text-white font-["IBM Plex Mono"] text-lg pb-5'>I Work with</h4>
